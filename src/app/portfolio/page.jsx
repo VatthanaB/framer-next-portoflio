@@ -8,8 +8,8 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Wedding Website",
-    desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.",
+    title: "Wedding Website ",
+    desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.(In Progress)  ",
     img: "/wedding.png",
     link: "https://vath-alex-wedding.vercel.app/",
   },
