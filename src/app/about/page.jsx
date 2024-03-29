@@ -40,7 +40,7 @@ const AboutPage = () => {
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
-            <p className="text-lg">
+            <p className="md:text-lg">
               Hello, I'm Vatthana, a Full Stack Developer from France, now based
               in Auckland, NZ. With 12 years as a pastry chef in
               Michelin-starred restaurants, I blend creativity and precision
@@ -49,7 +49,7 @@ const AboutPage = () => {
               innovate in the dynamic world of software development.
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
+            <span className=" text-sm md:text-base italic">
               "In every dessert and every line of code, lies the chance to craft
               something truly extraordinary."
             </span>
@@ -216,13 +216,16 @@ const AboutPage = () => {
                     Full-stack Developer
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="hidden md:block p-3 text-sm italic">
                     Full-stack developer on digital screens scheduler project,
                     utilizing Strapi for backend and Next.js for frontend.
                   </div>
+                  <div className="md:hidden  p-3 text-sm italic">
+                    Full-stack developer on screens scheduler project.
+                  </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Feb 2024 - Present · 2 mos
+                    Feb 2024 - Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -260,13 +263,17 @@ const AboutPage = () => {
                     Junior Web Developer - Content Migration
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="hidden md:block p-3 text-sm italic">
                     Managed migration of 200+ blogs for Auckland Thoroughbred
                     Racing from Wix to WordPress for better performance and UX.
                   </div>
+                  <div className="md:hidden  p-3 text-sm italic">
+                    Managed migration of 200+ blogs for Auckland Thoroughbred
+                    Racing
+                  </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Jan 2024 - Jan 2024 · 1 mo
+                    Jan 2024
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
@@ -283,13 +290,18 @@ const AboutPage = () => {
                     Full Stack Developer - Student
                   </div>
                   {/* JOB DESC */}
-                  <div className="p-3 text-sm italic">
+                  <div className="hidden md:block p-3 text-sm italic">
                     Full Stack Developer since Aug 2023, Mission Ready graduate
                     in Dev, Cloud, & DevOps with real-world mentorship.
                   </div>
+                  <div className="md:hidden p-3 text-sm italic">
+                    Mission Ready graduate in Dev, Cloud, & DevOps with
+                    real-world mentorship.
+                  </div>
+
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    Aug 2023 - Feb 2023 · 9 mos
+                    Aug 2023 - Feb 2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
