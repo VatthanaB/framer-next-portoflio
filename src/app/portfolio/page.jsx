@@ -3,10 +3,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import weddingWebsiteImg from "../../assets/images/wedding.png";
-import tindogImg from "../../assets/images/tindog.png";
-import animeInfiniteViewerImg from "../../assets/images/AnimeInfiniteviewer.png";
-import portfolioImg from "../../assets/images/portfolio.png";
 
 const items = [
   {
@@ -14,7 +10,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Wedding Website",
     desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.",
-    img: weddingWebsiteImg,
+    img: "/wedding.png",
     link: "https://vath-alex-wedding.vercel.app/",
   },
   {
@@ -22,7 +18,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Tindog Concept App",
     desc: "A charming and simple frontend project crafted at the beginning of my coding journey. Tindog is designed with HTML, CSS, and Bootstrap, offering a delightful visual experience with no complex interactions or functionalities.",
-    img: tindogImg,
+    img: "/tindog.png",
     link: "https://vatthanab.github.io/TindogWebsite/",
   },
   {
@@ -30,7 +26,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Infinite Anime Scroll App",
     desc: "Dive into the captivating world of anime with the Infinite Anime Viewer, a dynamic application built on the Next.js framework. This app combines the fluidity of infinite scrolling, the immersive animations of Framer Motion, and the power of React to bring you an unparalleled anime discovery experience.",
-    img: animeInfiniteViewerImg,
+    img: "/AnimeInfiniteviewer.png",
     link: "https://infinite-anime-viewer.vercel.app/",
   },
   {
@@ -38,7 +34,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Project Portfolio Website",
     desc: "First draft of my portfolio website, showcasing my projects and skills. This website is built with React, Tailwind CSS, and Daisy UI, Express, MongoDB offering a clean and responsive design that highlights my work and experience.",
-    img: portfolioImg,
+    img: "/portfolio.png",
     link: "https://projects-portfolio-vatthana.vercel.app/",
   },
 ];
@@ -73,7 +69,11 @@ const PortfolioPage = () => {
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] ">
-                    <Image src={item.img} alt="" fill className="rounded-lg" />
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="rounded-lg object-fill"
+                    />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
