@@ -41,12 +41,15 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="md:text-lg">
-              Hello, I'm Vatthana, a Full Stack Developer from France, now based
-              in Auckland, NZ. With 12 years as a pastry chef in
-              Michelin-starred restaurants, I blend creativity and precision
-              into my coding. Despite being new to tech, my passion for learning
-              and commitment to excellence propel me forward. Join me as I
-              innovate in the dynamic world of software development.
+              Bonjour! I'm Vatthana, a French Full Stack Developer based in
+              Auckland, New Zealand. With over a decade of experience, including
+              12 years as a pastry chef, I've honed my skills in various
+              culinary settings, including Michelin-starred restaurants. This
+              background has instilled in me a blend of creativity and precision
+              that I now apply to coding. Despite being relatively new to the
+              tech industry, my passion for learning and dedication to
+              excellence propel me forward. Join me as I innovate in the dynamic
+              world of software development.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className=" text-sm md:text-base italic">
