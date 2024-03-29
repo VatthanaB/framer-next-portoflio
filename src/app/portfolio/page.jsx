@@ -10,7 +10,7 @@ const items = [
     color: "from-red-300 to-blue-300",
     title: "Wedding Website",
     desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.",
-    img: "/portfolio/wedding.png",
+    img: "/wedding.png",
     link: "https://vath-alex-wedding.vercel.app/",
   },
   {
@@ -18,7 +18,7 @@ const items = [
     color: "from-blue-300 to-violet-300",
     title: "Tindog Concept App",
     desc: "A charming and simple frontend project crafted at the beginning of my coding journey. Tindog is designed with HTML, CSS, and Bootstrap, offering a delightful visual experience with no complex interactions or functionalities.",
-    img: "/portfolio/tindog.png",
+    img: "/tindog.png",
     link: "https://vatthanab.github.io/TindogWebsite/",
   },
   {
@@ -26,7 +26,7 @@ const items = [
     color: "from-violet-300 to-purple-300",
     title: "Infinite Anime Scroll App",
     desc: "Dive into the captivating world of anime with the Infinite Anime Viewer, a dynamic application built on the Next.js framework. This app combines the fluidity of infinite scrolling, the immersive animations of Framer Motion, and the power of React to bring you an unparalleled anime discovery experience.",
-    img: "/portfolio/AnimeInfiniteviewer.png",
+    img: "/AnimeInfiniteviewer.png",
     link: "https://infinite-anime-viewer.vercel.app/",
   },
   {
@@ -34,7 +34,7 @@ const items = [
     color: "from-purple-300 to-red-300",
     title: "Project Portfolio Website",
     desc: "First draft of my portfolio website, showcasing my projects and skills. This website is built with React, Tailwind CSS, and Daisy UI, Express, MongoDB offering a clean and responsive design that highlights my work and experience.",
-    img: "/portfolio/portfolio.png",
+    img: "/portfolio.png",
     link: "https://projects-portfolio-vatthana.vercel.app/",
   },
 ];
