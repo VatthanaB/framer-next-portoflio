@@ -38,18 +38,18 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+            <h1 className="font-bold text-2xl">A little bit about me</h1>
             {/* BIOGRAPHY DESC */}
             <p className="md:text-lg">
-              Bonjour! I'm Vatthana, a French Full Stack Developer based in
-              Auckland, New Zealand. With over a decade of experience, including
-              12 years as a pastry chef, I've honed my skills in various
-              culinary settings, including Michelin-starred restaurants. This
-              background has instilled in me a blend of creativity and precision
-              that I now apply to coding. Despite being relatively new to the
-              tech industry, my passion for learning and dedication to
-              excellence propel me forward. Join me as I innovate in the dynamic
-              world of software development.
+              I'm Vatthana, a French Full Stack Developer based in Auckland, New
+              Zealand. With over a decade of experience, including 12 years as a
+              pastry chef, I've honed my skills in various culinary settings,
+              including Michelin-starred restaurants. This background has
+              instilled in me a blend of creativity and precision that I now
+              apply to coding. Despite being relatively new to the tech
+              industry, my passion for learning and dedication to excellence
+              propel me forward. Join me as I innovate in the dynamic world of
+              software development.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className=" text-sm md:text-base italic">
@@ -120,6 +120,13 @@ const AboutPage = () => {
                 TypeScript
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                HTML
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                CSS
+              </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 React.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
@@ -128,6 +135,9 @@ const AboutPage = () => {
 
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Tailwind CSS
+              </div>
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Bootstrap
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 MongoDB
@@ -142,7 +152,9 @@ const AboutPage = () => {
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Express.js
               </div>
-
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                DevOps
+              </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Framer Motion
               </div>
@@ -154,16 +166,20 @@ const AboutPage = () => {
                 Docker
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Azure
+                Microsoft Azure
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                CD/CI
+                CI/CD Pipelines
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Git
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                DevsOps
+                SQL
+              </div>
+
+              <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Heroku
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
