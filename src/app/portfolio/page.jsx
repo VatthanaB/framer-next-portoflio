@@ -8,34 +8,34 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Wedding Website",
+    desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.",
+    img: "/portfolio/wedding.png",
+    link: "https://vath-alex-wedding.vercel.app/",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Tindog Concept App",
+    desc: "A charming and simple frontend project crafted at the beginning of my coding journey. Tindog is designed with HTML, CSS, and Bootstrap, offering a delightful visual experience with no complex interactions or functionalities.",
+    img: "/portfolio/tindog.png",
+    link: "https://vatthanab.github.io/TindogWebsite/",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    title: "Infinite Anime Scroll App",
+    desc: "Dive into the captivating world of anime with the Infinite Anime Viewer, a dynamic application built on the Next.js framework. This app combines the fluidity of infinite scrolling, the immersive animations of Framer Motion, and the power of React to bring you an unparalleled anime discovery experience.",
+    img: "/portfolio/AnimeInfiniteviewer.png",
+    link: "https://infinite-anime-viewer.vercel.app/",
   },
   {
     id: 4,
     color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    title: "Project Portfolio Website",
+    desc: "First draft of my portfolio website, showcasing my projects and skills. This website is built with React, Tailwind CSS, and Daisy UI, Express, MongoDB offering a clean and responsive design that highlights my work and experience.",
+    img: "/portfolio/portfolio.png",
+    link: "https://projects-portfolio-vatthana.vercel.app/",
   },
 ];
 
@@ -68,14 +68,20 @@ const PortfolioPage = () => {
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
+                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] ">
+                    <Image src={item.img} alt="" fill className="rounded-lg" />
                   </div>
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="flex justify-end"
+                  >
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      See Demo
+                    </button>
                   </Link>
                 </div>
               </div>
@@ -100,7 +106,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Front-end Developer and UI Designer
+                Full-Stack Developer & Bug Fixer
               </textPath>
             </text>
           </motion.svg>
