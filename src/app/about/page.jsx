@@ -284,7 +284,7 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Junior Web Developer - Content Migration
+                    Junior Web Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="hidden md:block p-3 text-sm italic">
