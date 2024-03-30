@@ -28,7 +28,7 @@ const AboutPage = () => {
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center">
+          <div className="flex flex-col gap-12 justify-center items-center md:items-start">
             {/* BIOGRAPHY IMAGE */}
             <Image
               src="/profile.png"
@@ -38,9 +38,11 @@ const AboutPage = () => {
               className="w-28 h-28 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">A little bit about me</h1>
+            <h1 className="font-bold text-xl md:text-2xl">
+              A little bit about me
+            </h1>
             {/* BIOGRAPHY DESC */}
-            <p className="md:text-lg">
+            <p className="text-sm md:text-lg">
               I'm Vatthana, a French Full Stack Developer based in Auckland, New
               Zealand. With over a decade of experience, including 12 years as a
               pastry chef, I've honed my skills in various culinary settings,
@@ -52,7 +54,7 @@ const AboutPage = () => {
               software development.
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className=" text-sm md:text-base italic">
+            <span className=" text-xs md:text-base italic">
               "In every dessert and every line of code, lies the chance to craft
               something truly extraordinary."
             </span>
@@ -97,13 +99,16 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div
+            className="flex flex-col items-center md:items-start gap-12 justify-center"
+            ref={skillRef}
+          >
             {/* SKILL TITLE */}
             <motion.h1
               initial={{ x: "-300px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-xl md:text-2xl"
             >
               SKILLS
             </motion.h1>
@@ -208,7 +213,7 @@ const AboutPage = () => {
           </div>
           {/* EXPERIENCE CONTAINER */}
           <div
-            className="flex flex-col gap-12 justify-center pb-48"
+            className="flex flex-col items-center md:items-start  gap-12 justify-center pb-48"
             ref={experienceRef}
           >
             {/* EXPERIENCE TITLE */}
@@ -216,7 +221,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-xl md:text-2xl"
             >
               EXPERIENCE
             </motion.h1>
@@ -231,7 +236,7 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Full-stack Developer
                   </div>
                   {/* JOB DESC */}
@@ -239,15 +244,15 @@ const AboutPage = () => {
                     Full-stack developer on digital screens scheduler project,
                     utilizing Strapi for backend and Next.js for frontend.
                   </div>
-                  <div className="md:hidden  p-3 text-sm italic">
+                  <div className="md:hidden  p-3 text-xs italic">
                     Full-stack developer on screens scheduler project.
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
                     Feb 2024 - Present
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
                     Datacom · Internship
                   </div>
                 </div>
@@ -278,7 +283,7 @@ const AboutPage = () => {
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Junior Web Developer - Content Migration
                   </div>
                   {/* JOB DESC */}
@@ -286,16 +291,16 @@ const AboutPage = () => {
                     Managed migration of 200+ blogs for Auckland Thoroughbred
                     Racing from Wix to WordPress for better performance and UX.
                   </div>
-                  <div className="md:hidden  p-3 text-sm italic">
+                  <div className="md:hidden  p-3 text-xs italic">
                     Managed migration of 200+ blogs for Auckland Thoroughbred
                     Racing
                   </div>
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
+                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
                     Jan 2024
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
                     Calibrate Marketing Agency · Contract
                   </div>
                 </div>
@@ -305,25 +310,25 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Full Stack Developer - Student
                   </div>
                   {/* JOB DESC */}
-                  <div className="hidden md:block p-3 text-sm italic">
+                  <div className="hidden  md:block p-3 text-sm italic">
                     Full Stack Developer since Aug 2023, Mission Ready graduate
                     in Dev, Cloud, & DevOps with real-world mentorship.
                   </div>
-                  <div className="md:hidden p-3 text-sm italic">
+                  <div className="md:hidden text-xs p-3 italic">
                     Mission Ready graduate in Dev, Cloud, & DevOps with
                     real-world mentorship.
                   </div>
 
                   {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-sm font-semibold">
-                    Aug 2023 - Feb 2023
+                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
+                    Aug 2023 - Feb 2024
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
                     Mission Ready · Accelerator Program
                   </div>
                 </div>
