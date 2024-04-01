@@ -7,6 +7,8 @@ const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
   const text = "Say Hello";
+  // Inside your component
+  const textAreaRef = useRef(null);
 
   const form = useRef();
 
@@ -32,7 +34,9 @@ const ContactPage = () => {
         }
       );
   };
-
+  const handleClick = () => {
+    textAreaRef.current.focus();
+  };
   return (
     <motion.div
       className="h-full"
@@ -40,9 +44,9 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 py-0 md:py-12">
         {/* TEXT CONTAINER */}
-        <div className=" md:py-0 h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-3xl md:text-6xl">
+        <div className=" md:py-0 h-1/4 lg:h-full lg:w-1/2 flex items-center justify-center text-3xl md:text-6xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -65,19 +69,21 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="overflow-auto h-full lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-sm md:text-xl flex flex-col gap-8 justify-center p-10 md:p-24 mb-6 md:mb-0"
+          className="overflow-scroll lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-sm md:text-xl flex flex-col gap-8 justify-center p-8 md:p-24 mb-6 md:mb-0"
         >
           <span>Dear Vatthana,</span>
           <textarea
+            ref={textAreaRef}
+            onClick={handleClick}
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            className="bg-transparent border-b-2 border-b-black outline-none resize-none   "
             name="user_message"
           />
           <span>My mail address is:</span>
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-transparent border-b-2 border-b-black outline-none "
           />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
