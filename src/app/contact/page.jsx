@@ -83,7 +83,7 @@ const ContactPage = () => {
           <input
             name="user_email"
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none "
+            className="bg-transparent border-b-2 border-b-black outline-none pb-1 "
           />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
