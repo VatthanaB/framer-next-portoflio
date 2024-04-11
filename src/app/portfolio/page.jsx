@@ -12,14 +12,16 @@ const items = [
     desc: "Create unforgettable memories for your special day with the Wedding Website, a beautiful and customizable platform built on the Next.js framework. This website combines the elegance of Tailwind CSS, the type-safety of TypeScript, and the power of Daisy UI to bring you a seamless wedding planning experience.(In Progress)  ",
     img: "/wedding.png",
     link: "https://vath-alex-wedding.vercel.app/",
+    demo: true,
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Tindog Concept App",
-    desc: "A charming and simple frontend project crafted at the beginning of my coding journey. Tindog is designed with HTML, CSS, and Bootstrap, offering a delightful visual experience with no complex interactions or functionalities.",
-    img: "/tindog.png",
+    title: "Datacom Scheduler",
+    desc: "The Datacom Scheduler was a 10-week project that I fully delivered during my internship at Datacom. I played a major role in developing this content management system using Next.js, Strapi CMS, and Azure Services. The project was executed in an Agile manner, incorporating DevOps best practices to ensure efficient workflows and high-quality outputs. Although a live demo is not available, please contact me for more details about the project.",
+    img: "/datacom.png",
     link: "https://vatthanab.github.io/TindogWebsite/",
+    demo: false,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const items = [
     desc: "Dive into the captivating world of anime with the Infinite Anime Viewer, a dynamic application built on the Next.js framework. This app combines the fluidity of infinite scrolling, the immersive animations of Framer Motion, and the power of React to bring you an unparalleled anime discovery experience.",
     img: "/AnimeInfiniteviewer.png",
     link: "https://infinite-anime-viewer.vercel.app/",
+    demo: true,
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const items = [
     desc: "First draft of my portfolio website, showcasing my projects and skills. This website is built with React, Tailwind CSS, and Daisy UI, Express, MongoDB offering a clean and responsive design that highlights my work and experience.",
     img: "/portfolio.png",
     link: "https://projects-portfolio-vatthana.vercel.app/",
+    demo: true,
   },
 ];
 
@@ -64,8 +68,8 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
+                <div className="flex flex-col  justify-start gap-8 text-white">
+                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-7xl">
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px] ">
@@ -83,9 +87,11 @@ const PortfolioPage = () => {
                     target="_blank"
                     className="flex justify-end"
                   >
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-                      See Demo
-                    </button>
+                    {item.demo && (
+                      <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                        See Demo
+                      </button>
+                    )}
                   </Link>
                 </div>
               </div>
