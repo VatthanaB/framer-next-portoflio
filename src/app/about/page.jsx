@@ -44,14 +44,13 @@ const AboutPage = () => {
             {/* BIOGRAPHY DESC */}
             <p className="text-sm md:text-lg">
               I'm Vatthana, a French Full Stack Developer based in Auckland, New
-              Zealand. With over a decade of experience, including 12 years as a
-              pastry chef, I've honed my skills in various culinary settings,
-              including Michelin-starred restaurants. This background has
-              instilled in me a blend of creativity and precision that I now
-              apply to coding. Despite being relatively new to the tech
-              industry, my passion for learning and dedication to excellence
-              propel me forward. Join me as I innovate in the dynamic world of
-              software development.
+              Zealand. Transitioning from a decade in culinary arts to software
+              development, I bring precision and creativity to coding. I
+              specialize in the MERN stack, am proficient with Next.js, and
+              familiar with frameworks like Tailwind CSS. My expertise also
+              includes DevOps and Azure services. Driven by a passion for
+              technology and a commitment to excellence, I am eager to
+              contribute innovative solutions in this dynamic field.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className=" text-xs md:text-base italic">
