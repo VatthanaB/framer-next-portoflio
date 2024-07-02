@@ -230,7 +230,84 @@ const AboutPage = () => {
               animate={isExperienceRefInView ? { x: "0" } : {}}
               className=""
             >
-              {/* EXPERIENCE LIST ITEM */}
+              {/* EXPERIENCE LIST ITEM TORO */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3">
+                  {/* JOB TITLE */}
+                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Full Stack Javascript Developer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="hidden  md:block p-3 text-sm italic">
+                    Leading development of AI-driven Te Reo Nāti revitalization
+                    project with Next.js frontend and Strapi backend.
+                  </div>
+                  <div className="md:hidden text-xs p-3 italic">
+                    Managing tech stack, collaborating with architect and
+                    designer, ensuring seamless integration and project success.
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
+                    May 2024 - July 2024
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
+                    Toro Technology & Datacom · Contract
+                  </div>
+                </div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3"></div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM CALIBRATE */}
+              <div className="flex justify-between h-48">
+                {/* LEFT */}
+                <div className="w-1/3 "></div>
+                {/* CENTER */}
+                <div className="w-1/6 flex justify-center">
+                  {/* LINE */}
+                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                    {/* LINE CIRCLE */}
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                  </div>
+                </div>
+                {/* RIGHT */}
+                <div className="w-1/3 ">
+                  {/* JOB TITLE */}
+                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
+                    Junior Web Developer
+                  </div>
+                  {/* JOB DESC */}
+                  <div className="hidden md:block p-3 text-sm italic">
+                    Managed content migration across three different projects
+                    between January and May: Auckland Thoroughbred Racing,
+                    Poronui, and Poronui Hunting.
+                  </div>
+                  <div className="md:hidden p-3 text-xs italic">
+                    Managed content migration across three different projects:
+                    Auckland Thoroughbred Racing, Poronui, and Poronui Hunting.
+                  </div>
+                  {/* JOB DATE */}
+                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
+                    Jan 2024 & May 2024
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
+                    Calibrate Marketing Agency · Contract
+                  </div>
+                </div>
+              </div>
+
+              {/* EXPERIENCE LIST ITEM DATACOM */}
               <div className="flex justify-between h-48">
                 {/* LEFT */}
                 <div className="w-1/3 ">
@@ -265,82 +342,6 @@ const AboutPage = () => {
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 "></div>
-              </div>
-
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3 "></div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3 ">
-                  {/* JOB TITLE */}
-                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Junior Web Developer
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="hidden md:block p-3 text-sm italic">
-                    Managed migration of 200+ blogs for Auckland Thoroughbred
-                    Racing from Wix to WordPress for better performance and UX.
-                  </div>
-                  <div className="md:hidden  p-3 text-xs italic">
-                    Managed migration of 200+ blogs for Auckland Thoroughbred
-                    Racing
-                  </div>
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
-                    Jan 2024
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
-                    Calibrate Marketing Agency · Contract
-                  </div>
-                </div>
-              </div>
-              {/* EXPERIENCE LIST ITEM */}
-              <div className="flex justify-between h-48">
-                {/* LEFT */}
-                <div className="w-1/3">
-                  {/* JOB TITLE */}
-                  <div className="bg-white text-sm md:text-base p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Full Stack Developer - Student
-                  </div>
-                  {/* JOB DESC */}
-                  <div className="hidden  md:block p-3 text-sm italic">
-                    Full Stack Developer since Aug 2023, Mission Ready graduate
-                    in Dev, Cloud, & DevOps with real-world mentorship.
-                  </div>
-                  <div className="md:hidden text-xs p-3 italic">
-                    Mission Ready graduate in Dev, Cloud, & DevOps with
-                    real-world mentorship.
-                  </div>
-
-                  {/* JOB DATE */}
-                  <div className="p-3 text-red-400 text-xs md:text-sm font-semibold">
-                    Aug 2023 - Feb 2024
-                  </div>
-                  {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-xs md:text-sm font-semibold w-fit">
-                    Mission Ready · Accelerator Program
-                  </div>
-                </div>
-                {/* CENTER */}
-                <div className="w-1/6 flex justify-center">
-                  {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                  </div>
-                </div>
-                {/* RIGHT */}
-                <div className="w-1/3"></div>
               </div>
             </motion.div>
           </div>
