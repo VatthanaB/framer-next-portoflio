@@ -43,20 +43,21 @@ const AboutPage = () => {
             </h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-sm md:text-lg">
-              I'm Vatthana, a French Full Stack Developer based in Auckland, New
-              Zealand. Transitioning from a decade in culinary arts to software
-              development, I bring precision and creativity to coding. I
-              specialize in the MERN stack, am proficient with Next.js, and
-              familiar with frameworks like Tailwind CSS. My expertise also
-              includes DevOps and Azure services. Driven by a passion for
-              technology and a commitment to excellence, I am eager to
-              contribute innovative solutions in this dynamic field.
+              Hello, I'm Vatthana, a full-stack developer and tech enthusiast
+              with a background as a Michelin-star pastry chef. I transitioned
+              to tech, focusing on AI, DevOps, and cloud computing. Currently,
+              I’m contracting at Buzzly, building dynamic Next.js apps, managing
+              AWS infrastructure, and integrating Strapi CMS. Previously, I
+              worked on a dialect revitalisation project at TORO Technology,
+              leveraging AI and Azure. Passionate about innovation, I’m excited
+              to collaborate on impactful tech projects.
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className=" text-xs md:text-base italic">
-              "In every dessert and every line of code, lies the chance to craft
-              something truly extraordinary."
+            <span className="text-xs md:text-base italic">
+              "From pastries to programming, every step is a reminder that
+              reinvention is always within reach."
             </span>
+
             {/* BIOGRAPHY SIGN SVG*/}
             {/* <div className="self-end">
               <svg
